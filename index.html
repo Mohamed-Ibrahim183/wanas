@@ -1,0 +1,460 @@
+<!doctype html>
+
+<html class="dark" dir="rtl" lang="ar">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ونس | ونسنا ب ناسنا</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#160037",
+              "surface-variant": "#340071",
+              "surface-container-high": "#2c0062",
+              "surface-container-highest": "#340071",
+              "surface-tint": "#6cf0f0",
+              "on-primary": "#005858",
+              "on-error": "#490006",
+              "tertiary-fixed-dim": "#00dea4",
+              "on-secondary": "#32005c",
+              "on-surface-variant": "#bc9af8",
+              "on-primary-fixed-variant": "#006262",
+              "error-container": "#9f0519",
+              error: "#ff716c",
+              "on-secondary-fixed-variant": "#6d2eab",
+              "outline-variant": "#56358c",
+              "primary-container": "#22bbbb",
+              "primary-dim": "#5ce2e2",
+              "on-secondary-container": "#e3c4ff",
+              primary: "#6cf0f0",
+              "inverse-primary": "#006a6a",
+              "inverse-on-surface": "#63439b",
+              "surface-container-low": "#1c0044",
+              "on-tertiary-fixed-variant": "#005c42",
+              "surface-container": "#240053",
+              "surface-bright": "#3c0081",
+              "on-tertiary-container": "#00523a",
+              "on-secondary-fixed": "#4e008a",
+              "tertiary-fixed": "#2fedb1",
+              "on-primary-container": "#003030",
+              "primary-fixed": "#6cf0f0",
+              "secondary-fixed": "#e4c6ff",
+              "secondary-container": "#6221a0",
+              "on-tertiary": "#005c42",
+              "surface-container-lowest": "#000000",
+              "on-primary-fixed": "#004343",
+              "on-background": "#eee0ff",
+              "on-error-container": "#ffa8a3",
+              background: "#160037",
+              "error-dim": "#d7383b",
+              "secondary-fixed-dim": "#dab4ff",
+              "on-tertiary-fixed": "#003c2a",
+              "inverse-surface": "#fef7ff",
+              "on-surface": "#eee0ff",
+              surface: "#160037",
+              "tertiary-dim": "#00dea4",
+              secondary: "#bf81ff",
+              outline: "#8564be",
+              "primary-fixed-dim": "#5ce2e2",
+              "secondary-dim": "#bf81ff",
+              "tertiary-container": "#2fedb1",
+              tertiary: "#47fbbe",
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px",
+            },
+            fontFamily: {
+              headline: ["Be Vietnam Pro"],
+              body: ["Be Vietnam Pro"],
+              label: ["Be Vietnam Pro"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Be Vietnam Pro", sans-serif;
+        background-color: #2f0565;
+        color: #eee0ff;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .glass-card {
+        background: rgba(52, 0, 113, 0.6);
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(40px);
+      }
+    </style>
+  </head>
+  <body class="bg-[#2F0565]">
+    <!-- TopAppBar -->
+    <header
+      class="fixed top-0 w-full z-50 bg-[#160037]/80 backdrop-blur-xl shadow-[0_0_40px_rgba(0,0,0,0.08)]"
+    >
+      <div
+        class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto"
+      >
+        <div class="text-2xl font-black text-[#01B1B1] tracking-tighter">
+          (ونس)
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+          <a
+            class="font-['Be_Vietnam_Pro'] text-lg font-medium leading-relaxed text-[#01B1B1] border-b-2 border-[#01B1B1] pb-1 hover:text-[#6cf0f0] transition-colors duration-300 transition-transform scale-95 active:opacity-80"
+            href="#home"
+            >الرئيسية</a
+          >
+          <a
+            class="font-['Be_Vietnam_Pro'] text-lg font-medium leading-relaxed text-[#bc9af8] hover:text-[#6cf0f0] transition-colors duration-300 transition-transform scale-95 active:opacity-80"
+            href="#games"
+            >الألعاب</a
+          >
+          <a
+            class="font-['Be_Vietnam_Pro'] text-lg font-medium leading-relaxed text-[#bc9af8] hover:text-[#6cf0f0] transition-colors duration-300 transition-transform scale-95 active:opacity-80"
+            href="#goals"
+            >أهدافنا</a
+          >
+          <a
+            class="font-['Be_Vietnam_Pro'] text-lg font-medium leading-relaxed text-[#bc9af8] hover:text-[#6cf0f0] transition-colors duration-300 transition-transform scale-95 active:opacity-80"
+            href="#stats"
+            >إحصائيات</a
+          >
+        </nav>
+        <button
+          class="bg-[#01B1B1] text-[#003030] px-6 py-2 rounded-full font-bold hover:bg-[#6cf0f0] transition-all transform active:scale-95"
+        >
+          اشترك الآن
+        </button>
+      </div>
+    </header>
+    <main class="pt-24">
+      <!-- Hero Section -->
+      <section
+        id="home"
+        class="relative min-h-[819px] flex items-center overflow-hidden px-8 scroll-mt-28"
+      >
+        <div
+          class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+        >
+          <div class="relative z-10 space-y-8">
+            <h1
+              class="text-7xl font-black text-on-background leading-tight tracking-tighter"
+            >
+              ونسنا ب <span class="text-[#01B1B1]">ناسنا</span>
+            </h1>
+            <p class="text-xl text-on-surface-variant max-w-lg leading-relaxed">
+              نحن نبني مجتمعاً يجمعنا في لحظات من الفرح والصدق. منصة "ونس" هي
+              مساحتك الخاصة للتواصل الإنساني الحقيقي بعيداً عن ضجيج العالم
+              الرقمي التقليدي.
+            </p>
+            <div class="flex gap-4">
+              <button
+                class="bg-[#01B1B1] text-[#003030] px-8 py-4 rounded-full text-lg font-bold shadow-[0_0_20px_rgba(1,177,177,0.3)] hover:scale-105 transition-transform"
+              >
+                ابدأ رحلة الونس
+              </button>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="absolute -top-20 -right-20 w-96 h-96 bg-primary/20 blur-[120px] rounded-full"
+            ></div>
+            <div
+              class="relative aspect-square rounded-xl overflow-hidden glass-card p-4"
+            >
+              <img
+                alt="Friends celebrating"
+                class="w-full h-full object-cover rounded-lg"
+                data-alt="Group of diverse young people laughing and sharing a meal in a warmly lit, vibrant evening indoor setting"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBww33hYqniJRG-dYnPpngl6fGOgN_EwF4nuO-GlNpk-hbofNfFKuxhhSTGx_BQp-Kbymzo0McSJT4Cgk09dN6KdFj3Amgmz0T-UohR956bisbK72tY0u9tS_d3_QNkqN9INeERUBS60c2yy2O8mNagS-rYGpwTXUMG62QI9Q7UBd-an9zX210gWWAlkgCBnNkXZFsGyfk4dihjYwT8D6PP_ATR7BVu7zMNicd4pE6BC-XxpOCzE1i5zqcZzfHPMTD3wP9cdFqjUA"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Game Section (Asymmetric Bento) -->
+      <section
+        id="games"
+        class="py-24 px-8 bg-surface-container-low scroll-mt-28"
+      >
+        <div class="max-w-7xl mx-auto">
+          <div class="flex justify-between items-end mb-16">
+            <div class="space-y-4">
+              <h2 class="text-4xl font-black text-on-background tracking-tight">
+                ما بينا ونس
+              </h2>
+              <p class="text-on-surface-variant text-lg">
+                ألعاب صُممت لتقريب المسافات
+              </p>
+            </div>
+            <span
+              class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-full font-bold text-sm"
+              >أحدث الإصدارات</span
+            >
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+            <div
+              class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-high p-8 flex flex-col justify-end min-h-[450px]"
+            >
+              <img
+                alt="Card game"
+                class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700"
+                data-alt="Close-up of artistic card game pieces with vibrant illustrations on a dark purple velvet surface with soft teal ambient lighting"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn0r1Yf54qPR6D7x6Cuclvm7mZwmwhxRNhYbDRFc8XPsZRMLwb-GqhLrUV5RSMV0YzeJip6pfPqHt8swyHKbEntBXhUIZUHa7dKminYGISg3UjCin4iaH2C5fVU-rtYpoYo0GQyt94diW3C1uOTFLnGRDYnj63_gHnuup7uUXiDgNVUZXPoZpKDQqtdLKUUsrkZChFd0G1JJuCC9mzwaTSrt12nohXg_UiGc7dkxErLfGm5H8dDkWzAVzSqNqi7DZKqUaGl0eHuA"
+              />
+              <div class="relative z-10">
+                <span
+                  class="bg-tertiary text-on-tertiary px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest mb-4 inline-block"
+                  >قريباً جداً</span
+                >
+                <h3 class="text-5xl font-black text-on-background mb-4">
+                  لعبة "ما بينا ونس"
+                </h3>
+                <p class="text-on-surface-variant max-w-md text-lg">
+                  مجموعة من الأسئلة والتحديات التي تكسر الحواجز وتكشف عن جواهر
+                  القصص المخبأة في قلوب الأصدقاء.
+                </p>
+              </div>
+            </div>
+            <div class="md:col-span-4 grid grid-rows-2 gap-8">
+              <div
+                class="bg-surface-container-highest rounded-xl p-8 flex flex-col justify-center items-center text-center"
+              >
+                <span
+                  class="material-symbols-outlined text-5xl text-[#01B1B1] mb-4"
+                  >style</span
+                >
+                <h4 class="text-xl font-bold mb-2">١٠٠+ كرت</h4>
+                <p class="text-on-surface-variant text-sm">محتوى غني ومتنوع</p>
+              </div>
+              <div
+                class="bg-primary-container rounded-xl p-8 flex flex-col justify-center items-center text-center text-on-primary-container"
+              >
+                <span class="material-symbols-outlined text-5xl mb-4"
+                  >groups</span
+                >
+                <h4 class="text-xl font-bold mb-2">للجميع</h4>
+                <p class="text-on-primary-container/80 text-sm">
+                  من ٢ إلى ٨ لاعبين
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Goals Section -->
+      <section id="goals" class="py-32 px-8 scroll-mt-28">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center max-w-2xl mx-auto mb-20">
+            <h2 class="text-5xl font-black text-on-background mb-6">
+              أهدافنا الجوهرية
+            </h2>
+            <p class="text-on-surface-variant">
+              نؤمن أن السعادة الحقيقية تكمن في قوة الروابط التي نبنيها
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div
+              class="p-12 rounded-xl glass-card border border-outline-variant/10 hover:border-[#01B1B1]/30 transition-all group"
+            >
+              <div
+                class="w-16 h-16 bg-surface-container-highest rounded-full flex items-center justify-center mb-8 group-hover:bg-[#01B1B1] transition-colors"
+              >
+                <span
+                  class="material-symbols-outlined text-3xl text-[#01B1B1] group-hover:text-on-primary"
+                  >diversity_1</span
+                >
+              </div>
+              <h3 class="text-2xl font-bold mb-4">بناء المجتمع</h3>
+              <p class="text-on-surface-variant leading-relaxed">
+                خلق بيئة حاضنة لكل من يبحث عن الانتماء والقبول في عالم متسارع.
+              </p>
+            </div>
+            <div
+              class="p-12 rounded-xl glass-card border border-outline-variant/10 hover:border-[#01B1B1]/30 transition-all group"
+            >
+              <div
+                class="w-16 h-16 bg-surface-container-highest rounded-full flex items-center justify-center mb-8 group-hover:bg-[#01B1B1] transition-colors"
+              >
+                <span
+                  class="material-symbols-outlined text-3xl text-[#01B1B1] group-hover:text-on-primary"
+                  >link</span
+                >
+              </div>
+              <h3 class="text-2xl font-bold mb-4">تعميق التواصل</h3>
+              <p class="text-on-surface-variant leading-relaxed">
+                تحويل اللقاءات العابرة إلى ذكريات لا تُنسى عبر الحوار الصادق
+                واللعب الهادف.
+              </p>
+            </div>
+            <div
+              class="p-12 rounded-xl glass-card border border-outline-variant/10 hover:border-[#01B1B1]/30 transition-all group"
+            >
+              <div
+                class="w-16 h-16 bg-surface-container-highest rounded-full flex items-center justify-center mb-8 group-hover:bg-[#01B1B1] transition-colors"
+              >
+                <span
+                  class="material-symbols-outlined text-3xl text-[#01B1B1] group-hover:text-on-primary"
+                  >celebration</span
+                >
+              </div>
+              <h3 class="text-2xl font-bold mb-4">نشر البهجة</h3>
+              <p class="text-on-surface-variant leading-relaxed">
+                إضافة لمسة من السحر على كل تجمع، لأن الحياة أجمل عندما نضحك
+                سوياً.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Numbers Section -->
+      <section
+        id="stats"
+        class="py-24 bg-surface-container-lowest scroll-mt-28"
+      >
+        <div
+          class="max-w-7xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-12 text-center"
+        >
+          <div class="space-y-2">
+            <div class="text-6xl font-black text-[#01B1B1] tracking-tighter">
+              ٥٠٠٠+
+            </div>
+            <div
+              class="text-on-surface-variant font-label uppercase tracking-widest text-xs"
+            >
+              عضو مجتمع
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="text-6xl font-black text-tertiary tracking-tighter">
+              ١٢٠
+            </div>
+            <div
+              class="text-on-surface-variant font-label uppercase tracking-widest text-xs"
+            >
+              فعالية منظمة
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="text-6xl font-black text-secondary tracking-tighter">
+              ٤٥
+            </div>
+            <div
+              class="text-on-surface-variant font-label uppercase tracking-widest text-xs"
+            >
+              شريك نجاح
+            </div>
+          </div>
+          <div class="space-y-2">
+            <div class="text-6xl font-black text-primary tracking-tighter">
+              ٢٤/٧
+            </div>
+            <div
+              class="text-on-surface-variant font-label uppercase tracking-widest text-xs"
+            >
+              دعم متواصل
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Signature Community Pulse -->
+      <div
+        class="fixed bottom-8 left-1/2 -translate-x-1/2 z-40 w-[90%] max-w-md"
+      >
+        <div
+          class="glass-card bg-surface-container-highest/70 backdrop-blur-2xl rounded-full px-8 py-4 flex items-center justify-between border border-white/5 shadow-2xl"
+        >
+          <div class="flex -space-x-3 space-x-reverse">
+            <img
+              class="w-10 h-10 rounded-full border-2 border-surface-dim"
+              data-alt="portrait of a smiling man"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwhvForuMeAyn54AV8VGfQlYFq2z-f3373ITph1kpsGoUIN1JmVYL6wn0dXw3NJxe2nGQxsHA-yH4l0Qc9lgydk2N3jBSKoWfkK0JmIuyyMTIXLy3qW1SA9Ung5XgabuQuDUz44-WRFjldOyr22O-sxZNCOow-zs8tLBoIBtnKVE_hFEefR4zhXzgoG2uhOzbb7XS8hRNyrv1HKrnKGxrKu2xV4V9DB0FPOphxTbYLk2YFjD1khkn8CKBAUFUAPH477R5KO91KxA"
+            />
+            <img
+              class="w-10 h-10 rounded-full border-2 border-surface-dim"
+              data-alt="portrait of a smiling woman"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBegBW39luiCP1ikxpQSBCk_qSLD7wG8yaVQvAxrHceH8oNX0DnA5s7L-GAnygbZLXYq6X9CJRQrMt30UpKkadRUm1ynz2IkUA1cAmy4NjaUahIxOEaz69szSYnb-1lKfuvZBDUxDuADZO0RgLUp_BXt72qnZVSc1Ntx7HnXXYMMSLFjxaOeU0tsuqmPWprSXI-OdOoy8ui3DLz3moGgrq4fq_tEdSdsQnZSIYIoF7-k9eLn4tNUqPuekH_IQz_sDIec2sN_9dJaQ"
+            />
+            <img
+              class="w-10 h-10 rounded-full border-2 border-surface-dim"
+              data-alt="portrait of a young man"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHufdabQzVn8t1pwO_kx-Ur19TVqGaUMKRgSVQXxTr4SJ6qOkD5--vwVoNBMxwMu2csufmwYG-ULa0YrDZg4gVQBm6VhpmY5ojpUNnUpmewIMgwNP_q9NyiyQPXdmAuJbrnyNaelecSMMMpE7AorefXryBTxe9_uKLSrMhT9IadLpUE6OFbC8z73zTF1qXKyLdFrsh7ZTD5Ti8Bwfgy-McQmnzMCoTA_NL41caAkwIzvuDk-7oCDc-rncZmW9O577YFx5BWGQoaw"
+            />
+            <div
+              class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center text-xs font-bold border-2 border-surface-dim"
+            >
+              +١٢
+            </div>
+          </div>
+          <div class="text-sm font-bold text-on-background">
+            انضم إلى الجلسة الآن
+          </div>
+          <button class="bg-[#01B1B1] p-2 rounded-full text-on-primary">
+            <span
+              class="material-symbols-outlined"
+              style="font-variation-settings: &quot;FILL&quot; 1"
+              >bolt</span
+            >
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#000000] w-full py-12 px-8">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center w-full max-w-7xl mx-auto gap-6"
+      >
+        <div class="text-xl font-bold text-[#01B1B1]">ونس</div>
+        <nav class="flex gap-8">
+          <a
+            class="font-['Be_Vietnam_Pro'] text-sm text-[#bc9af8] tracking-widest hover:text-[#47fbbe] transition-colors"
+            href="#"
+            >سياسة الخصوصية</a
+          >
+          <a
+            class="font-['Be_Vietnam_Pro'] text-sm text-[#bc9af8] tracking-widest hover:text-[#47fbbe] transition-colors"
+            href="#"
+            >الشروط والأحكام</a
+          >
+          <a
+            class="font-['Be_Vietnam_Pro'] text-sm text-[#bc9af8] tracking-widest hover:text-[#47fbbe] transition-colors"
+            href="#"
+            >اتصل بنا</a
+          >
+        </nav>
+        <div
+          class="font-['Be_Vietnam_Pro'] text-sm text-[#bc9af8] tracking-widest opacity-90"
+        >
+          © ٢٠٢٤ ونس. جميع الحقوق محفوظة.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
