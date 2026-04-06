@@ -156,14 +156,16 @@
       </div>
     </header>
     <main class="pt-0">
-      <!-- Top Gradient Shadow (Header to Hero) -->
-      <div class="h-16 bg-gradient-to-b from-[#160037] via-[#160037]/50 to-transparent relative z-20"></div>
       <!-- Hero Section -->
       <section
         id="home"
-        class="relative h-screen flex items-center overflow-hidden px-8 scroll-mt-0 bg-cover bg-center"
-        style="background-image: url('hero.png');"
+        class="relative flex items-center overflow-hidden px-8 scroll-mt-0 bg-cover bg-center min-h-screen"
+        style="background-image: url('hero.png'); height: calc(100vh - 4.5rem);"
       >
+        <!-- Top Shadow Overlay -->
+        <div class="absolute top-0 left-0 right-0 h-48 bg-gradient-to-b from-[#160037]/95 via-[#160037]/60 to-transparent pointer-events-none z-20"></div>
+        <!-- Bottom Shadow Overlay -->
+        <div class="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-[#1c0044]/90 via-[#240053]/50 to-transparent pointer-events-none z-20"></div>
         <div class="absolute inset-0 bg-black/40"></div>
         <div class="max-w-7xl mx-auto w-full relative z-10">
           <div class="space-y-8 max-w-lg">
